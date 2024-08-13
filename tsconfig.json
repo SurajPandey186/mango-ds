@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "ES2020",
+      "DOM.Iterable"
+    ],
+    "target": "ES2020",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
+    "paths": {
+      "mango-ds": [
+        "./lib/main.ts"
+      ]
+    },
+
+    /* Bundler mode */
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+ 
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Vitest */
+    "types": ["vitest/globals"]
+  },
+  "include": [
+    "src",
+    "lib"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
